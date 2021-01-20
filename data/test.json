@@ -1,0 +1,20 @@
+{"nodes":[
+    {"id":"1", "label":"App A"}
+    ,{"id":"2", "label":"App B"}
+    ,{"id":"3", "label":"App C"}
+    ,{"id":"4", "label":"App D"}
+    ,{"id":"5", "label":"App E"}
+  ],
+  "edges":[
+    {"from":"1", "to":"2", "label":"web service"}
+    ,{"from":"1", "to":"3", "label":"message"}
+    ,{"from":"1", "to":"4", "label":"file transfer"}
+    ,{"from":"1", "to":"5", "label":"shared DB"}
+    ,{"from":"2", "to":"3", "label":"web service"}
+    ,{"from":"3", "to":"5", "label":"web service"}
+    ,{"from":"2", "to":"1", "label":"file transfer"}
+    ,{"from":"3", "to":"5", "label":"web service"}
+    ,{"from":"5", "to":"1", "label":"web service"}
+    ,{"from":"5", "to":"4", "label":"web service"}
+  ]
+}
