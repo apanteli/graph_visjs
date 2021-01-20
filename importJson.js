@@ -10,7 +10,7 @@
   var options = {
     nodes: {
       font: {
-        color: 'black',
+        color: 'blue',
       },
       image: "img/server.png",
       shape:"image",
