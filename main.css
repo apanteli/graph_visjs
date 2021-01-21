@@ -1,5 +1,22 @@
 #mynetwork {
     width: 100%;
-    height: 500px;
+    height: auto;
     border: 2px solid lightgray;
+}
+
+#result {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+#import {
+    margin: 10px 0;
+}
+
+.grid-container {
+    height: 100%;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
