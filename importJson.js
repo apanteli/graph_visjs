@@ -164,3 +164,19 @@ document.getElementById('import').onclick = function () {
   fr.readAsText(files.item(0));
 
 };
+
+document.getElementById('example').onclick = function () {
+  var json = $.getJSON("data/test.json")
+    .done(function (data) {
+      var data = {
+        nodes: data.nodes,
+        edges: data.edges
+      };
+      console.log(data);
+      document.getElementById('result').value = JSON.stringify(data, null, 2);
+      var network = new vis.Network(container, data, options);
+    });
+
+  var container = document.getElementById('mynetwork');
+
+};
